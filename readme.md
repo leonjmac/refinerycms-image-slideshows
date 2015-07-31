@@ -10,7 +10,7 @@ Image Slideshows engine for [Refinery CMS](http://refinerycms.com) allows you to
 
 ### In summary you can:
 * Manage slideshows (title, height, width, js config)
-* Manage i18n slides in every slideshow (title, image, caption, link_url)
+* Manage i18n slides in every slideshow (title, image, caption, body, link_url)
 
 ## Requirements
 
