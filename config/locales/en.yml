@@ -47,6 +47,7 @@ en:
         image: Image
         caption: Caption
         link_url: Link
+        body: Text body
       refinery/image_slideshows/image_slideshow:
         title: Title
         height: Height
