@@ -48,6 +48,7 @@ module Refinery
               :image_id,
               :caption,
               :link_url,
+              :body,
               :position,
               :image_slideshow_id
             )

@@ -48,6 +48,7 @@ fr:
         image: Image
         caption: Légende
         link_url: Lien
+        body: Corps du texte
       refinery/image_slideshows/image_slideshow:
         title: Titre
         height: Hauteur
