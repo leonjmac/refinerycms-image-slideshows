@@ -1,5 +1,7 @@
 # Refinery CMS Image Slideshows
 
+[![Build Status](https://travis-ci.org/bisscomm/refinerycms-image-slideshows.svg?branch=master)](https://travis-ci.org/refinery/refinerycms) [![Code Climate](https://codeclimate.com/github/bisscomm/refinerycms-image-slideshows/badges/gpa.svg)](https://codeclimate.com/github/bisscomm/refinerycms-image-slideshows) [![Test Coverage](https://codeclimate.com/github/bisscomm/refinerycms-image-slideshows/badges/coverage.svg)](https://codeclimate.com/github/bisscomm/refinerycms-image-slideshows/coverage)
+
 Image Slideshows engine for [Refinery CMS](http://refinerycms.com) allows you to display multiple slideshows.
 
 
