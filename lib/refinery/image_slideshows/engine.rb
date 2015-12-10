@@ -8,7 +8,7 @@ module Refinery
 
       initializer "register refinerycms_image_slideshows plugin" do
         Refinery::Plugin.register do |plugin|
-          plugin.name = "image_slideshows"
+          plugin.name = "refinery_image_slideshows"
           plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.image_slideshows_admin_image_slideshows_path }
           plugin.pathname = root
           plugin.menu_match = %r{refinery/(image_slides|image_slideshows)(/.+?)?$}

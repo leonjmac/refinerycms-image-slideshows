@@ -1,9 +1,7 @@
 fr:
   refinery:
     plugins:
-      image_slides:
-        title: Diapos
-      image_slideshows:
+      refinery_image_slideshows:
         title: Diaporamas
     image_slideshows:
       admin:
