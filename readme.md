@@ -26,7 +26,7 @@ To use Rails 3.x / Refinery 2.0.x use the [refinerycms-image_slideshows "Refiner
 Open up your ``Gemfile`` and add at the bottom this line:
 
 ```ruby
-gem 'refinerycms-image_slideshows', git: 'https://github.com/bisscomm/refinerycms-image-slideshows', branch: 'master'
+gem 'refinerycms-image_slideshows', github: 'bisscomm/refinerycms-image-slideshows', branch: 'master'
 ```
 
 Now, run ``bundle install``
@@ -49,7 +49,7 @@ Add this code in your HTML) :
 
 ```html+erb
   <body>
-    <% main_slideshow = Refinery::ImageSlideshows::ImageSlideshow.find_by_title('Your Awesome Slideshow Title') %>
+    <% main_slideshow = Refinery::ImageSlideshows::ImageSlideshow.includes(:image_slides).find_by_title('Your Awesome Slideshow Title') %>
     <div id="wrapper">
       <div class="slider-wrapper">
         <div id="slider">
@@ -95,4 +95,3 @@ Or just with rake spec
 * Check out our [Website](http://refinerycms.com/)
 * Documentation is available in the [guides](http://refinerycms.com/guides)
 * Questions can be asked on our [Google Group](http://group.refinerycms.org)
-* Questions can also be asked in our IRC room, [#refinerycms on freenode](irc://irc.freenode.net/refinerycms)
