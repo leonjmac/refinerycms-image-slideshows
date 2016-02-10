@@ -16,7 +16,7 @@ Image Slideshows engine for [Refinery CMS](http://refinerycms.com) allows you to
 
 ## Requirements
 
-This version of `refinerycms-image_slideshows` supports Refinery 3.x and Rails 4.1.x.
+This version of `refinerycms-image_slideshows` supports Refinery 3.x and Rails 4.1+.
 To use Rails 3.x / Refinery 2.0.x use the [refinerycms-image_slideshows "Refinery CMS 2-0 stable branch"](https://github.com/bisscomm/refinerycms-image-slideshows/tree/2-0-stable).
 
 * [Refinery CMS](http://refinerycms.com) version 3.0.0 or above.
