@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'refinerycms-core', ['> 3.0.0', '< 4.1.0']
   s.add_dependency 'refinerycms-images', '~> 3.0.0'
   s.add_dependency 'acts_as_indexed', '~> 0.8.0'
-  s.add_dependency 'globalize', ['>= 4.0.0', '< 5.2']
+  s.add_dependency 'globalize', ['>= 4.0.0', '< 5.4']
 
   # Development dependencies (usually used for testing)
   s.add_development_dependency 'refinerycms-testing', '~> 3.0.0'
