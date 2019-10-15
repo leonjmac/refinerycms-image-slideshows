@@ -1,6 +1,4 @@
 Refinery::Core::Engine.routes.draw do
-  Refinery::Core::Engine.routes.draw do
-  get '/system/videos/*dragonfly', :to => Dragonfly.app(:refinery_videos)
   
   # Frontend routes
   namespace :image_slideshows do
