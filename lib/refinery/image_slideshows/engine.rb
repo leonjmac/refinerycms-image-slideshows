@@ -2,16 +2,16 @@ module Refinery
   module ImageSlideshows
     class Engine < Rails::Engine
       include Refinery::Engine
-      isolate_namespace Refinery::ImageSlideshows
 
+      isolate_namespace Refinery
       engine_name :refinery_image_slideshows
 
-      initializer "register refinerycms_image_slideshows plugin" do
+      before_inclusion do 
         Refinery::Plugin.register do |plugin|
-          plugin.name = "refinery_image_slideshows"
-          plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.admin_image_slideshows_path }
           plugin.pathname = root
+          plugin.name = "refinery_image_slideshows"
           plugin.menu_match = %r{refinery/(image_slides|image_slideshows)(/.+?)?$}
+          plugin.url = proc { Refinery::Core::Engine.routes.url_helpers.admin_image_slideshows_path }
         end
       end
 
