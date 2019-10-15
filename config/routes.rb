@@ -1,6 +1,13 @@
 Refinery::Core::Engine.routes.draw do
-  get '/system/images/*dragonfly', :to => Dragonfly.app(:refinery_images)
+  Refinery::Core::Engine.routes.draw do
+  get '/system/videos/*dragonfly', :to => Dragonfly.app(:refinery_videos)
+  
+  # Frontend routes
+  namespace :image_slideshows do
+    resources :image_slides, :path => '', :only => [:index, :show]
+  end
 
+  # Backend routes
   namespace :admin, :path => Refinery::Core.backend_route do
     resources :image_slideshows do
       resources :image_slides, :except => :show do
