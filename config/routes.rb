@@ -1,9 +1,9 @@
 Refinery::Core::Engine.routes.draw do
-  
-  # Frontend routes
-  namespace :image_slideshows do
-    resources :image_slides, :path => '', :only => [:index, :show]
-  end
+
+  # # Frontend routes
+  # namespace :image_slideshows do
+  #   resources :image_slides, :path => '', :only => [:index, :show]
+  # end
 
   # Backend routes
   namespace :admin, :path => Refinery::Core.backend_route do

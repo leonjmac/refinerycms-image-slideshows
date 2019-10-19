@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name              = 'refinerycms-image_slideshows'
   s.authors           = ['Jim Pruetting', 'Brice Sanchez', 'Leon McLeggan']
   s.homepage          = 'http://www.refinerycms.com'
-  s.version           = '3.0.1.3'
+  s.version           = '3.0.1.4'
   s.description       = 'Ruby on Rails Image Slideshows extension for Refinery CMS'
   s.date              = '2019-10-10'
   s.summary           = 'Image Slideshows extension for Refinery CMS'
