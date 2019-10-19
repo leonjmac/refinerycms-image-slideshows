@@ -7,9 +7,9 @@ module Refinery
                 :sortable => true,
                 :include => [:translations]
 
-        before_filter :find_image_slideshow
-        before_filter :find_image_slides, only: :index
-        before_filter :find_image_slide, :except => [:index, :new]
+        before_action :find_image_slideshow
+        before_action :find_image_slides, only: :index
+        before_action :find_image_slide, :except => [:index, :new]
 
         def create
           if Refinery::ImageSlideshows::ImageSlide.any?
@@ -38,15 +38,15 @@ module Refinery
             redirect_to image_slides_path, :notice => t('deleted', :scope => 'refinery.image_slideshows.admin.image_slides')
           end
         end
-        
+
         protected
-        
+
           def image_slide_params
             params.require(:image_slide).permit(permitted_image_slide_params)
           end
 
         private
-      
+
           def permitted_image_slide_params
             [
               :id,
